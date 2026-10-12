@@ -1,0 +1,598 @@
+/* ========================================
+   CONFIGURAÇÕES GERAIS
+======================================== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #09080f;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* ========================================
+   MENU
+======================================== */
+.header {
+    background-color: #42245f;
+}
+
+.menu {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 18px 20px;
+    /* FLEXBOX */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #a855df;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.menu-links {
+    /* FLEXBOX */
+    display: flex;
+    gap: 25px;
+    font-size: 12px;
+}
+
+.menu-links a:hover {
+    color: #b65ee8;
+}
+
+/* ========================================
+   HERO
+======================================= */
+.hero {
+    min-height: 420px;
+    background-color: #42245f;
+    /* FLEXBOX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 48px;
+    line-height: 1.05;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 25px auto;
+    font-size: 14px;
+    color: #ddd5e5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a855df;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #8d3ec0;
+}
+
+/* ========================================
+   TÍTULOS DAS SEÇÕES
+======================================== */
+.section-title {
+    max-width: 700px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.section-title span {
+    color: #b65ee8;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.section-title p {
+    color: #bcb5c5;
+    font-size: 13px;
+}
+
+/* ========================================
+   SERVIÇOS
+======================================== */
+.servicos {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+/* GRID */
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.card {
+    min-height: 140px;
+    padding: 25px 20px;
+    background-color: #2d2340;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin: 0 0 12px;
+    font-size: 12px;
+}
+
+.card p {
+    margin: 0;
+    color: #c4bccb;
+    font-size: 12px;
+}
+
+/* ========================================
+   SOBRE
+======================================== */
+.sobre {
+    padding: 80px 20px;
+    background-color: #21182f;
+}
+
+.sobre-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* FLEXBOX */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.sobre-texto {
+    width: 50%;
+}
+
+.sobre-texto h3 {
+    color: #b65ee8;
+    font-size: 14px;
+}
+
+.sobre-texto p {
+    color: #c4bccb;
+    font-size: 12px;
+}
+
+/* Elemento visual */
+.sobre-imagem {
+    width: 45%;
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(135deg,
+            #9849cf,
+            #21132f);
+}
+
+/* Círculos */
+.circulo {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.sobre-imagem .circulo-1 {
+    width: 55px;
+    height: 55px;
+    background-color: #c58de3;
+
+    left: 15%;
+    top: 20%;
+}
+
+.sobre-imagem .circulo-2 {
+    width: 70px;
+    height: 70px;
+    background-color: #9872b2;
+
+    left: 40%;
+    top: 20%;
+}
+
+.sobre-imagem .circulo-3 {
+    width: 55px;
+    height: 55px;
+    background-color: #754f8e;
+
+    right: 12%;
+    top: 20%;
+}
+
+.sobre-imagem .circulo-4 {
+    width: 45px;
+    height: 45px;
+    background-color: #8541ad;
+
+    left: 30%;
+    bottom: 15%;
+}
+
+.sobre-imagem .circulo-5 {
+    width: 65px;
+    height: 65px;
+    background-color: #542a6d;
+
+    right: 15%;
+    bottom: 10%;
+}
+
+/* ========================================
+   CLIENTES
+======================================== */
+.clientes {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+
+/* GRID */
+.depoimentos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.depoimento {
+    padding: 30px 20px;
+    background-color: #2d2340;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.cliente-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: #a855df;
+    font-size: 12px;
+}
+
+.depoimento p {
+    color: #e0d9e5;
+    font-size: 12px;
+}
+
+.depoimento strong {
+    font-size: 11px;
+}
+
+/* ========================================
+   CONTATO
+======================================== */
+.contato {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px 20px 90px;
+}
+
+.contato-container {
+    /* FLEXBOX */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* Imagem */
+.contato-imagem {
+    width: 45%;
+    height: 330px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(160deg,
+            #251338,
+            #a855df);
+}
+
+/* Círculos da área de contato */
+.contato-c1 {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #a855df;
+
+    left: 10%;
+    top: 15%;
+}
+
+.contato-c2 {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #a855df;
+
+    left: 25%;
+    top: 35%;
+}
+
+.contato-c3 {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #a855df;
+
+    right: 20%;
+    top: 15%;
+}
+
+.contato-c4 {
+    width: 45px;
+    height: 45px;
+    border: 1px solid #a855df;
+
+    left: 40%;
+    bottom: 15%;
+}
+
+.contato-c5 {
+    width: 70px;
+    height: 70px;
+    border: 1px solid #a855df;
+
+    right: 10%;
+    bottom: 15%;
+}
+
+/* Formulário */
+.formulario {
+    width: 45%;
+    padding: 25px;
+    border: 1px solid #a855df;
+    border-radius: 10px;
+    background-color: #21182f;
+}
+
+.formulario h3 {
+    margin-top: 0;
+    color: #c37aeb;
+    font-size: 16px;
+}
+
+.formulario p {
+    color: #bbb2c2;
+    font-size: 11px;
+}
+
+.formulario label {
+    display: block;
+    margin: 12px 0 5px;
+    font-size: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #a855df;
+    border-radius: 4px;
+    background-color: #0e0b13;
+    color: white;
+}
+
+.formulario textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.formulario .btn {
+    margin-top: 15px;
+}
+
+/* ========================================
+   Área do FOOTER
+======================================== */
+footer {
+    padding: 45px 20px 25px;
+    background-color: #110d18;
+    /* FLEXBOX */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-logo {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-column {
+    width: 30%;
+    text-align: center;
+}
+
+.footer-column h3 {
+    color: #b65ee8;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.footer-column a,
+.footer-column p {
+    display: block;
+    margin: 8px 0;
+    color: #aaa1b1;
+    font-size: 10px;
+}
+
+.copyright {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+    color: #77717d;
+    font-size: 9px;
+}
+
+/* ========================================
+   RESPONSIVIDADE
+======================================== */
+
+/* TABLET 850px
+----------------------------------------- */
+@media (max-width: 850px) {
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    /* GRID */
+    .servicos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .depoimentos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* FLEX */
+    .sobre-container {
+        gap: 30px;
+    }
+
+    .sobre-texto {
+        width: 50%;
+    }
+
+    .sobre-imagem {
+        width: 50%;
+    }
+
+    .contato-container {
+        gap: 20px;
+    }
+}
+
+/* ----------------------------------------
+   CELULAR
+   Inspirado no breakpoint de 500px
+----------------------------------------- */
+@media (max-width: 500px) {
+    /* MENU */
+    .menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* HERO */
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 12px;
+    }
+
+    /* GRID */
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .depoimentos {
+        grid-template-columns: 1fr;
+    }
+
+    /* SOBRE */
+    .sobre-container {
+        flex-direction: column;
+    }
+
+    .sobre-texto {
+        width: 100%;
+    }
+
+    .sobre-imagem {
+        width: 100%;
+    }
+
+    /* CONTATO */
+    .contato-container {
+        flex-direction: column;
+    }
+
+    .contato-imagem {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+}

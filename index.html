@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/images/black_hole.png">
+  <title>Alyson Souto | Portfólio</title>
+
+  <!-- Fontes: Orbitron para títulos, Inter para textos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =====================================================
+       LOADING SCREEN — simula a inicialização de um sistema
+  ====================================================== -->
+  <div id="loading-screen" class="loading-screen">
+    <div class="boot-box">
+      <p class="boot-title">SYSTEM BOOT</p>
+      <ul class="boot-log" id="boot-log">
+        <!-- linhas inseridas via JavaScript -->
+      </ul>
+      <div class="boot-bar">
+        <div class="boot-bar-fill" id="boot-bar-fill"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="logo">
+        <img src="assets/images/black_hole_transparent.png" alt="Logo Alyson Souto">
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#tecnologias">Tecnologias</a></li>
+        <li><a href="#projetos-front-end">Front-End</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+    <section class="hero" id="hero">
+      <div class="hero-grid container">
+
+        <div class="hero-photo-wrap">
+          <div class="hero-photo">
+            <img src="assets/images/img_perfil.jpg" alt="Foto de Alyson Souto" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo')">
+            <span class="photo-frame-tag">USER.PROFILE</span>
+          </div>
+        </div>
+
+        <div class="hero-text">
+          <p class="hero-eyebrow">// ACCESS GRANTED</p>
+          <h1 class="hero-name glitch" data-text="Alyson Souto">Alyson Souto</h1>
+          <p class="hero-role">Estudante de Engenharia de Software</p>
+          <p class="hero-desc">
+            1º semestre na FIAP, construindo os fundamentos de HTML, CSS, JavaScript e Python.
+            Em busca da minha primeira oportunidade de estágio para colocar a mão na massa
+            e crescer junto de um time de tecnologia.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="https://github.com/alyson-souto" target="_blank" rel="noopener" class="btn btn-primary">
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/alyson-souto-739039314/" target="_blank" rel="noopener" class="btn btn-outline">
+              <span>LinkedIn</span>
+            </a>
+            <a href="#contato" class="btn btn-ghost">
+              <span>Contato</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SOBRE — painel de sistema estilo "log"
+    ====================================================== -->
+    <section class="sobre" id="sobre">
+        <div class="container">
+            <p class="section-eyebrow">— SOBRE MIM</p>
+            <h2 class="about-title">
+                Da lógica ao
+                <span>código</span>
+            </h2>
+
+            <p class="about-subtitle">
+                Um pouco sobre minha trajetória, o que estudo hoje e para onde estou indo.
+            </p>
+
+            <div class="about-grid">
+                <!-- Texto -->
+                <div class="about-text">
+                    <p>
+                        Sou <strong>Alyson Souto</strong>, estudante do primeiro semestre de
+                        <strong>Engenharia de Software</strong> na FIAP.
+                        Ainda no início da graduação, já venho desenvolvendo projetos
+                        para transformar teoria em código real, explorando desde o
+                        desenvolvimento Front-end até minhas primeiras experiências
+                        com lógica de programação e hardware.
+                    </p>
+
+                    <p>
+                        Tenho interesse especial por
+                        <strong>desenvolvimento Front-end</strong>,
+                        gosto de pensar em como uma interface se comporta, como ela guia quem 
+                        está do outro lado da tela e como pequenos detalhes fazem toda a 
+                        diferença na experiência final.
+                    </p>
+
+                    <p>
+                        Meu objetivo é conquistar meu
+                        <strong>primeiro estágio em tecnologia</strong>,
+                        continuar evoluindo durante a graduação
+                        e construir uma carreira baseada em aprendizado contínuo,
+                        colaboração e desenvolvimento de soluções reais.
+                    </p>
+                </div>
+
+                <!-- Cards -->
+                <div class="about-cards">
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="icon-graduation-cap"></i>
+                        </div>
+
+                        <div>
+                            <h3>FIAP</h3>
+                            <span>Instituição de ensino</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="icon-laptop"></i>
+                        </div>
+
+                        <div>
+                            <h3>Engenharia de Software</h3>
+                            <span>Curso em andamento</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="icon-folder-kanban"></i>
+                        </div>
+
+                        <div>
+                            <h3>Projetos Acadêmicos</h3>
+                            <span>Aplicação prática do aprendizado</span>
+                        </div>
+                    </div>
+
+                    <div class="about-card">
+                        <div class="about-icon">
+                            <i class="icon-trending-up"></i>
+                        </div>
+
+                        <div>
+                            <h3>Aprendizado Contínuo</h3>
+                            <span>Evolução constante como desenvolvedor</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         TECNOLOGIAS — barras de progresso em CSS puro
+    ====================================================== -->
+    <section class="tecnologias" id="tecnologias">
+        <div class="container">
+
+            <p class="section-eyebrow">— TECNOLOGIAS</p>
+
+            <h2 class="tech-title">
+                Ferramentas que uso no <span>dia a dia</span>
+            </h2>
+
+            <p class="tech-subtitle">
+                Minha caixa de ferramentas atual, em constante expansão.
+            </p>
+
+            <div class="tech-grid">
+                <article class="tech-card">
+
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+
+                    <h3>HTML5</h3>
+
+                    <p>
+                        Estruturação semântica de páginas e aplicações web.
+                    </p>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+
+                    <h3>CSS3</h3>
+
+                    <p>
+                        Estilização, layout responsivo com Flexbox e Grid.
+                    </p>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+                        Interatividade e lógica aplicada ao Front-end.
+                    </p>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+
+                    <h3>Git</h3>
+
+                    <p>
+                        Controle de versão e organização do código.
+                    </p>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+
+                    <h3>GitHub</h3>
+
+                    <p>
+                        Versionamento, colaboração e publicação de projetos.
+                    </p>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+
+                    <h3>Python</h3>
+
+                    <p>
+                        Lógica de programação e automação de tarefas.
+                    </p>
+                </article>
+
+                <article class="tech-card">
+                    <div class="tech-icon">
+                        <i class="fa-brands fa-figma"></i>
+                    </div>
+
+                    <h3>Figma</h3>
+
+                    <p>
+                        Protótipos e planejamento visual de interfaces.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- =====================================================
+         PROJETOS ACADÊMICOS FRONT-END — carrossel 3D
+    ====================================================== -->
+    <section class="frontend-showcase" id="projetos-front-end">
+      <div class="container">
+        <p class="section-eyebrow">— FRONT-END</p>
+        <h2 class="projects-title frontend-title">Ambiente de estudos focado em <span>FRONT-END</span></h2>
+        <p class="projects-subtitle frontend-subtitle">
+          Atividades acadêmicas da FIAP imerso em HTML, CSS, Grid, responsividade e frameworks.
+          <!-- Selecione um cartão para explorar a atividade. -->
+        </p>
+
+        <div class="showcase-topline">
+          <span class="showcase-status"><span class="status-dot"></span> ARQUIVOS ACADÊMICOS // 03 PROJETOS</span>
+          <span class="showcase-hint">USE AS SETAS OU SELECIONE UM CARTÃO</span>
+        </div>
+
+        <div class="project-carousel" aria-label="Carrossel de projetos acadêmicos Front-End">
+          <button class="carousel-arrow carousel-prev" type="button" aria-label="Projeto anterior">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+
+          <div class="carousel-stage" id="frontend-carousel-stage">
+            <article class="frontend-card" data-index="0" data-project="novacore" tabindex="0" aria-label="NovaCore, atividade de revisão">
+              <div class="frontend-card-shell">
+                <div class="frontend-card-top"><span>REVISÃO FLEX, GRID E RESPONSIVIDADE</span><span>01 / 03</span></div>
+                <div class="frontend-preview image-placeholder" aria-label="Prévia do projeto NovaCore">
+                  <img src="assets/images/novacore.png" alt="Prévia do projeto NovaCore" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+                  <span class="image-placeholder-text" hidden>Adicione sua imagem PNG<br><code>novacore.png</code></span>
+                </div>
+                <div class="frontend-card-info">
+                  <p class="frontend-card-kicker">01 // REVISÃO</p>
+                  <h3>NovaCore</h3>
+                  <p>Uma interface de soluções digitais para praticar estrutura HTML, organização visual e estilos responsivos.</p>
+                  <div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsividade</span></div>
+                  <a class="frontend-open" href="atividades_front_end_CP4/revisao/index.html">Explorar projeto <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </article>
+
+            
+
+            <article class="frontend-card" data-index="1" data-project="tailwind" tabindex="0" aria-label="Fio e Prensa, atividade Tailwind CSS">
+              <div class="frontend-card-shell">
+                <div class="frontend-card-top"><span>TAILWIND</span><span>02 / 03</span></div>
+                <div class="frontend-preview image-placeholder" aria-label="Prévia do projeto Fio e Prensa">
+                  <img src="assets/images/tailwind.png" alt="Prévia do projeto Fio e Prensa" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+                  <span class="image-placeholder-text" hidden>Adicione sua imagem PNG<br><code>fio-e-prensa.png</code></span>
+                </div>
+                <div class="frontend-card-info">
+                  <p class="frontend-card-kicker">02 // FRAMEWORK TAILWIND</p>
+                  <h3>Fio &amp; Prensa</h3>
+                  <p>Site de um ateliê de encadernação, explorando utilitários Tailwind, Grid, espaçamento e adaptação de layout.</p>
+                  <div class="project-tags"><span>HTML</span><span>Tailwind CSS</span><span>Grid</span></div>
+                  <a class="frontend-open" href="./atividades_front_end_CP4/tailwind/index.html" target="_blank" rel="noopener noreferrer">Explorar projeto <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </article>
+
+            <article class="frontend-card" data-index="2" data-project="bootstrap" tabindex="0" aria-label="Grão Nobre, atividade Bootstrap">
+              <div class="frontend-card-shell">
+                <div class="frontend-card-top"><span>BOOTSTRAP</span><span>03 / 03</span></div>
+                <div class="frontend-preview image-placeholder" aria-label="Prévia do projeto Grão Nobre">
+                  <img src="assets/images/bootstrap.png" alt="Prévia do projeto Grão Nobre" onerror="this.hidden=true; this.nextElementSibling.hidden=false">
+                  <span class="image-placeholder-text" hidden>Adicione sua imagem PNG<br><code>grao-nobre.png</code></span>
+                </div>
+                <div class="frontend-card-info">
+                  <p class="frontend-card-kicker">03 // FRAMEWORK BOOTSTRAP</p>
+                  <h3>Grão Nobre</h3>
+                  <p>Interface para uma marca de café, aplicando componentes Bootstrap, navegação, layout e organização responsiva.</p>
+                  <div class="project-tags"><span>HTML</span><span>Bootstrap</span><span>Componentes</span></div>
+                  <a class="frontend-open" href="./atividades_front_end_CP4/bootstrap/index.html" target="_blank" rel="noopener noreferrer">Explorar projeto <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-arrow carousel-next" type="button" aria-label="Próximo projeto">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="carousel-controls">
+          <div class="carousel-dots" role="group" aria-label="Selecionar projeto">
+            <button type="button" class="carousel-dot is-active" data-go="0" aria-label="Mostrar NovaCore" aria-pressed="true"></button>
+            <button type="button" class="carousel-dot" data-go="1" aria-label="Mostrar Fio e Prensa" aria-pressed="false"></button>
+            <button type="button" class="carousel-dot" data-go="2" aria-label="Mostrar Grão Nobre" aria-pressed="false"></button>
+          </div>
+          <span class="carousel-counter"><strong id="carousel-current">01</strong><span> / 03</span></span>
+        </div>
+        <!-- <p class="frontend-footnote"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Cada cartão abre a atividade original incluída neste portfólio.</p> -->
+      </div>
+    </section>
+
+    <!-- =====================================================
+         PROJETOS — seção principal
+    ====================================================== -->
+    <section class="projetos" id="projetos">
+
+        <div class="container">
+            <p class="section-eyebrow">— PROJETOS</p>
+            <h2 class="projects-title">
+                Projetos acadêmicos que foram <span>desenvolvídos</span>
+            </h2>
+
+            <p class="projects-subtitle">
+                Uma seleção dos projetos acadêmicos e pessoais que desenvolvi até aqui.
+            </p>
+
+            <div class="projects-grid">
+                <!-- Projeto -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="assets/images/projetos_orbital_flood_watch.png">
+                        <div class="project-overlay"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Orbital Flood Watch</h3>
+
+                        <p>
+                            Sistema de monitoramento e alerta para enchentes, 
+                            desenvolvido para o desafio da Global Solution 2026 da FIAP.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-footer">
+
+                            <a href="https://github.com/alyson-souto/orbital-flood-watch" target="_blank" rel="noopener" class="contact-card">
+                            <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+
+                            <a href="https://alyson-souto.github.io/orbital-flood-watch/" target="_blank" rel="noopener" class="view">
+                                Ver Projeto
+                            <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+
+
+                <!-- Projeto -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="assets/images/bmw.jpg">
+                        <div class="project-overlay"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>EletroRide</h3>
+
+                        <p>
+                            Loja virtual de motocicletas elétricas, com carrinho de compras 
+                            e layout responsivo, desenvolvida durante a disciplina de Front-End.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/alyson-souto/cp3-web-ecommerce-motos-eletricas" target="_blank" rel="noopener" class="contact-card">
+
+                            <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+
+                            <a href="https://alyson-souto.github.io/cp3-web-ecommerce-motos-eletricas/" target="_blank" rel="noopener" class="view">
+                                Ver Projeto
+
+                            <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Projeto -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="assets/images/cyber_system.png">
+                        <div class="project-overlay"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>CyberSystem</h3>
+
+                        <p>
+                            Projeto com temática livre, simula uma interface 
+                            inspirada em sistemas cyberpunk. A proposta 
+                            combina design futurista, animações HUD, efeitos neon e interações 
+                            dinâmicas para transformar estudos de programação em uma experiência 
+                            visual imersiva.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/alyson-souto/checkpoint2-front-end-cyber-system" target="_blank" rel="noopener" class="contact-card">
+
+                            <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+
+                            <a href="https://alyson-souto.github.io/checkpoint2-front-end-cyber-system/" target="_blank" rel="noopener" class="view">
+                                Ver Projeto
+
+                            <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Projeto -->
+
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img src="assets/images/action_figures.png">
+                        <div class="project-overlay"></div>
+                    </div>
+
+                    <div class="project-content">
+                        <h3>Action Figures Store</h3>
+
+                        <p>
+                            
+
+                            Projeto de um e-commerce de action figures, pensado para fãs de colecionáveis, 
+                            personagens de games e cultura geek. A proposta foi desenvolver uma aplicação 
+                            web interativa, como manipulação do DOM, utilização do método Reduce e  
+                            estilização com CSS.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>HTML</span>
+
+                            <span>CSS</span>
+
+                            <span>JavaScript</span>
+                        </div>
+
+                        <div class="project-footer">
+                            <a href="https://github.com/alyson-souto/cp2-web-ecommerce-action-figures" target="_blank" rel="noopener" class="contact-card">
+
+                            <i class="fa-brands fa-github"></i>
+                                GitHub
+                            </a>
+
+                            <a href="https://alyson-souto.github.io/cp2-web-ecommerce-action-figures/" target="_blank" rel="noopener" class="view">
+                                Ver Projeto
+
+                            <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =====================================================
+         CONTATO
+    ====================================================== -->
+    <section class="contato" id="contato">
+      <div class="container">
+        <p class="section-eyebrow">04 // CONTATO</p>
+        <h2 class="section-title">Vamos conversar?</h2>
+
+        <div class="contact-grid">
+          <a href="https://github.com/alyson-souto" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">alyson-souto</span>
+          </a>
+          <a href="https://www.linkedin.com/in/alyson-souto-739039314/" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">Alyson Souto</span>
+          </a>
+          <a href="mailto:alyson@email.com" class="contact-card">
+            <span class="contact-label">Gmail</span>
+            <span class="contact-value">alyson.souto.dev@gmail.com</span>
+          </a>
+          <a href="https://wa.me/5511970171739" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-label">WhatsApp</span>
+            <span class="contact-value">(11) 97017-1739</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-status"><span class="status-dot"></span> SYSTEM STATUS: <strong>Connection Secure</strong></p>
+      <p class="footer-version">Version 1.0</p>
+      <p class="footer-copy">© <span id="footer-year"></span> Alyson Souto</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

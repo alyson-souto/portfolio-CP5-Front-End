@@ -50,6 +50,12 @@ HUD (Heads-Up Display).
 
 <p align="center">
 
+<img src="./assets/images/images_preview_3.png" width="90%">
+
+</p>
+
+<p align="center">
+
 <img src="./assets/images/images_preview_2.png" width="90%">
 
 </p>
@@ -159,7 +165,7 @@ https://github.com/alyson-souto
 LinkedIn:
 https://linkedin.com/in/alyson-souto-739039314
 
-Acesso direto ao Portfólio Digital: https://alyson-souto.github.io/portfolio-dev/
+Acesso direto ao Portfólio Digital: https://alyson-souto.github.io/portfolio-CP5-Front-End/
 
 ---
 
@@ -169,7 +175,7 @@ Acesso direto ao Portfólio Digital: https://alyson-souto.github.io/portfolio-de
 
 </div>
 
-Teste de autenticação GitHub.
+<!-- Teste de autenticação GitHub.
 
 ## Laboratório Front-End
 
@@ -179,4 +185,4 @@ A seção **Laboratório Front-End** apresenta um carrossel 3D interativo com tr
 - `atividades_front_end_CP4/tailwind/index.html` — Fio & Prensa (Tailwind CSS)
 - `atividades_front_end_CP4/bootstrap/index.html` — Grão Nobre (Bootstrap)
 
-Use as setas, os indicadores ou selecione um cartão lateral para trazê-lo ao centro. No celular, também é possível deslizar entre os cartões. Os previews da galeria são composições visuais feitas em HTML/CSS para manter a seção leve; o botão de cada cartão abre a atividade original.
+Use as setas, os indicadores ou selecione um cartão lateral para trazê-lo ao centro. No celular, também é possível deslizar entre os cartões. Os previews da galeria são composições visuais feitas em HTML/CSS para manter a seção leve; o botão de cada cartão abre a atividade original. -->
